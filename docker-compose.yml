@@ -3,7 +3,7 @@ version: '2'
 services:
   curator:
     build: curator/
-    command: "--config /usr/share/curator/curator.yml /usr/share/curator/actionfile.yml"
+    command: "--dry-run --config /usr/share/curator/curator.yml /usr/share/curator/actionfile.yml"
     networks:
       - elk
     depends_on:
